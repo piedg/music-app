@@ -1,0 +1,82 @@
+.mainContainer {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftContainer h1,
+h2,
+h3 {
+  margin: 10px 0px 0px 0px;
+}
+
+.rightContainer {
+  display: flex;
+}
+
+.rightContainer img {
+  margin: 10px;
+  border: 1px solid #000;
+}
+
+.bottomContainer {
+  margin-top: 50px;
+  display: flex;
+}
+
+.bottomContainer > :first-child {
+  margin-right: 10px;
+}
+
+.renderArtistTrackContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trackArtistContainer {
+  background: #333;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.trackArtistContainer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.trackArtistContainer img {
+  border: 1px solid #000;
+  border-radius: 10px;
+
+}
+
+.trackArtistTitle {
+  padding: 10px;
+}
+
+
+@media (max-width: 575.98px) {
+  .mainContainer {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .leftContainer {
+    padding: 10px;
+  }
+
+  .rightContainer img {
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+  }
+  
+}

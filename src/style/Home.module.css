@@ -1,0 +1,67 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px 0px 25px;
+}
+
+.searchBarContainer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.searchBarInput, .searchBarInput:focus  {
+  padding: 20px;
+  width: 100%;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 1px solid black;
+  font-size: 1em;
+  height: 100%;
+  right: 0;
+  top: 0;
+  outline: none;
+}
+
+.searchBarInput:focus {
+  box-shadow: 0 0 4pt 1pt #7710b3;
+  transition: box-shadow 0.2s ease-out;
+  
+}
+
+.searchBarButton, .searchBarButton:focus {
+  background: #7710b3;
+  color: #fff;
+  border: 1px solid #7710b3;
+  border-left: 0;
+  height: 100%;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 60px;
+  transition: background-color 0.5s ease-out 100ms;
+  cursor: pointer;
+  outline: none
+  
+}
+
+.searchBarButton:hover {
+  background-color: #4710b3;
+  animation: 1s;
+}
+
+@media (max-width: 575.98px) { 
+  .mainContainer {
+    padding: 10px;
+  }
+
+  .searchBarContainer {
+    margin: 25px
+  }
+}

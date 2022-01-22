@@ -1,0 +1,24 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px ;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background: #7710b3;
+    color: #fff;
+}
+
+.rightContainer {
+    display: flex;
+}
+
+.rightContainer > * {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.headerLogo a {
+    color: white;
+    text-decoration: none;
+}

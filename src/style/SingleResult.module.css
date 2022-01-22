@@ -1,0 +1,90 @@
+.singleResultContainer {
+  position: relative;
+  border: 1px solid #000;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  min-width: 450px;
+  max-width: 450px;
+  transition: 0.5s;
+}
+
+.singleResultContainer:hover {
+  box-shadow: 0 0 4pt 2pt #7710b3;
+  transition: 0.5s;
+
+}
+
+.singleResultBGImg {
+  display: block;
+  width: 100%;
+}
+.singleResultInfoContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-left: 1px solid #000;
+  width: 100%;
+}
+
+.singleResultInfo {
+  padding: 10px;
+}
+.singleResultInfo > :last-child {
+  margin-top: 10px;
+}
+
+.singleResultInfo h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.singleResultLink {
+  color: #000;
+  text-decoration: none;
+}
+
+.singleResultLinkContainer {
+  display: flex;
+}
+
+.singleResultBottom {
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.singleResultBottom > :first-child {
+  margin-right: 10px;
+}
+
+.singleResultBtn {
+  cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+  .singleResultContainer {
+    min-width: 350px;
+    max-width: 350px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .singleResultBGImg {
+    width: 100%;
+  }
+  .singleResultInfo {
+    padding: 5px;
+  }
+
+  .singleResultInfo h3 {
+    font-size: 1.1em;
+  }
+  .singleResultInfo h4 {
+    font-size: 0.9em;
+  }
+}
