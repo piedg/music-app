@@ -5,12 +5,12 @@ export const Header = (isLogged) => {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.headerLogo}>
-        <Link to="/"> Logo </Link>
+        <Link to="/"> Home </Link>
       </div>
       <div className={styles.rightContainer}>
-        <p>Brani salvati</p>
+       {/* <p>Brani salvati</p>
         <p>{isLogged ? "Login" : "Logout}"}</p>
-        <p>Impostazioni</p>
+       <p>Impostazioni</p> */}
       </div>
     </div>
   );

@@ -18,6 +18,11 @@
     margin-right: 10px;
 }
 
+.headerLogo {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
 .headerLogo a {
     color: white;
     text-decoration: none;

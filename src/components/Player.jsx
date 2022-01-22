@@ -37,7 +37,6 @@ export const Player = () => {
     if (audioRef.current) {
       if (!isPlayed) {
         audioRef.current.pause();
-        console.log("Sono qui");
       } else if (isPlayed) {
         audioRef.current.load();
         audioRef.current.play().catch((error) => {

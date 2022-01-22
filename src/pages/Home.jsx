@@ -54,10 +54,10 @@ export const Home = () => {
 
   const showResults = () => {
     if (tracksData.error) {
-      return <h1>Errore. Provare con una nuova ricerca</h1>;
+      return <h1>Errore. Prova con una nuova ricerca</h1>;
     } else if (tracksData.length <= 0) {
       return <h1>Ascolta i tuoi brani preferiti in un click</h1>;
-    } else if (tracksData.total === 0 || tracksData.total === undefined) {
+    } else if (tracksData.total === 0 || !tracksData.total) {
       return <h1>Nessun risultato</h1>;
     } else {
       return loading ? (
